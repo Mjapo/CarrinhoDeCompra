@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Animação</title>
+
+    <link rel="stylesheet" type="text/css" href="um.css" media="screen" />
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <style>
+
+    </style>
+    <script>
+        $(function() {
+            var state = true;
+            $("#button").click(function() {
+                $("#effect").animate({
+                    backgroundColor: "#FFFFFF",
+                    color: "#000"
+                }, 1000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+    <br>
+    <br>
+    <div id="effect" style="background: #2d2d2d">
+        <h3 id="h3" style="color: #fff">Deixar conteudo invisível</h3>
+        <p style="color: #fff">
+            clique para apagar fazer sumir o conteúdo
+        </p>
+    </div>
+
+    <button id="button">Deixar invisivel</button>
+
+
+</body>
+
+</html>
